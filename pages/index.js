@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/client";
+import LoginForm from '../components/LoginForm'
 
 export default function Home() {
   const [session] = useSession();
@@ -12,7 +13,9 @@ export default function Home() {
 
       <nav>
         {!session ? (
-          <button onClick={() => signIn("github")}>GitHub Connect</button>
+            <LoginForm 
+              githubSignIn={() => signIn("github")}
+            />
         ) : (
           <>
             <span>{session.user.name}</span>

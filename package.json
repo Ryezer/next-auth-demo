@@ -9,14 +9,17 @@
   },
   "dependencies": {
     "@prisma/client": "^2.30.3",
-    "next": "^9.5.3",
+    "daisyui": "^1.14.0",
+    "next": "^9.5.5",
     "next-auth": "^3.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
     "postcss-preset-env": "^6.7.0",
     "prisma": "^3.0.2",
-    "tailwindcss": "^1.8.10"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
   }
 }
